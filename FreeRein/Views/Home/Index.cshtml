@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Free Rein</h1>
+    <p class="lead">A chose your own adventure game collaboratively written by the internet.</p>
+    <p><a href='@Url.Action("Index", "Narrative")' class="btn btn-primary btn-large">Play now &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>How to Play</h2>
+        <p>
+            You play a chose your own adventure book until you have reached the current end.
+            From there it is up to you to write what happens next and what the next two actions
+            can be. You will be notified when someone else continues the story.
+        </p>
+        <p><a class="btn btn-default" href='@Url.Action("About")'>Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Privacy</h2>
+        <p>Your email address is needed to play. It will not be sold and no other private information is required.</p>
+        <p><a class="btn btn-default" href='@Url.Action("Privacy")'>Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Free and Open Source</h2>
+        <p>I have no intention of charging for the game and encourage communities to host their own stories using the open source code.</p>
+        <p><a class="btn btn-default" href="https://www.github.com/kirbycope">View the Source &raquo;</a></p>
+    </div>
+</div>

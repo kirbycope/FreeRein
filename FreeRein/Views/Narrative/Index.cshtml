@@ -1,0 +1,35 @@
+﻿@model FreeRein.Models.Narrative
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    <p>
+        @Html.DisplayFor(model => model.Story)
+    </p>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">@Html.DisplayNameFor(model => model.Option1)</h3>
+            </div>
+            <div class="panel-body">
+                <p>@Html.DisplayFor(model => model.Option1)</p>
+                <p><a href='@Url.Action("Next", new { CurrentID = Model.ID, SelectedOption = 1 })' class="btn btn-primary btn-lg" role="button">Go »</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">@Html.DisplayNameFor(model => model.Option2)</h3>
+            </div>
+            <div class="panel-body">
+                <p>@Html.DisplayFor(model => model.Option2)</p>
+                <p><a href='@Url.Action("Next", new { CurrentID = Model.ID, SelectedOption = 2 })' class="btn btn-primary btn-lg" role="button">Go »</a></p>
+            </div>
+        </div>
+    </div>
+</div>
